@@ -3,12 +3,9 @@ import {useState } from 'react'
 import { AddCategory, GifGrid } from './components';
 export const GifExpertApp = () =>
 {
-    const [categories, setcategories] = useState(['Del Bombillo Soy'])
+    const [categories, setcategories] = useState(['Del Bombillo Soy']);
     const onAddCategory = (newCategory) =>{
         if(categories.includes(newCategory)) return; 
-
-     //categories.push(newCategory);
-     //console.log(newCategory);
     setcategories([newCategory,...categories ] );
     }
 
